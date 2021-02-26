@@ -10,7 +10,6 @@
 #' oldest_player_of_year(2015)
 
 oldest_NBAplayer_of_year<- function(year){
-  usethis::use_data(nba, internal = TRUE, overwrite = TRUE)
   nba1 <- dplyr::filter(nba, Year == year)
   nba2 <- dplyr::arrange(nba1, desc(Age))
   Player_name = nba2$Player[1]

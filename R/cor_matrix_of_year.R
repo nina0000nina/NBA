@@ -10,7 +10,6 @@
 #' cor_matrix_of_year(2015)
 
 cor_matrix_of_year<- function(year){
-  usethis::use_data(nba, internal = TRUE, overwrite = TRUE)
   nba1 <- purrr::keep(nba, is.numeric)
   nba2 <- dplyr::filter(nba1, Year == year)
   cor_max <- cor(nba2)

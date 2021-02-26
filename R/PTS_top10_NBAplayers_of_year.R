@@ -11,7 +11,6 @@
 
 #Top 10 players, whit the highest PTS, of Year
 PTS_top10_NBAplayers_of_year<- function(year){
-  usethis::use_data(nba, internal = TRUE, overwrite = TRUE)
   nba1 <- dplyr::filter(nba, Year == year)
   nba2 <- dplyr::arrange(nba1, desc(PTS))
   Player_name = nba2$Player[1:10]
