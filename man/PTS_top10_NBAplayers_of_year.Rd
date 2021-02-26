@@ -13,7 +13,7 @@ PTS_top10_NBAplayers_of_year(year)
 Names of the Top 10 players, who get the most PTS of the year.
 }
 \description{
-This function allows you to check who are the top 10 players earneing the most PTS in certain year
+This function allows you to check who are the top 10 players earning the most PTS in certain year
 }
 \examples{
 PTS_top10_NBAplayers_of_year(1999)

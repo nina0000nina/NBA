@@ -1,6 +1,6 @@
 #' Top 10 players, whit the highest PTS, of Year
 #'
-#' This function allows you to check who are the top 10 players earneing the most PTS in certain year
+#' This function allows you to check who are the top 10 players earning the most PTS in certain year
 #' @param year An integer, ranges from year 1950 to year 2017
 #' @keywords Top 10 NBA players' PTS
 #' @return Names of the Top 10 players, who get the most PTS of the year.

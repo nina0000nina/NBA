@@ -2,8 +2,7 @@
 #'
 #' This function allows you to plot the correlogram of all numeric variables of the year, it also returns to a correlation matrix of all numeric variables of the year.
 #' @param year An integer, ranges from year 1950 to year 2017
-#' @keywords correlogram
-#' correlation matrix
+#' @keywords correlogram correlation matrix
 #' @return Correlogram and a Correlation Matrix of all the numeric variables of the year
 #' @export
 #' @examples

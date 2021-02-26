@@ -20,3 +20,4 @@ oldest_player_of_year(1999)
 oldest_player_of_year(2015)
 }
 \keyword{oldest}
+\keyword{player}

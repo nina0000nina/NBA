@@ -2,7 +2,7 @@
 #'
 #' This function allows you to check who was the oldest Player of the year
 #' @param year An integer, ranges from year 1950 to year 2017
-#' @keywords oldest
+#' @keywords oldest player
 #' @return Name of the player, representing the oldest player of the year.
 #' @export
 #' @examples
