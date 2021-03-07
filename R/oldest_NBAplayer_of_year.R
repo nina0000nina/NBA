@@ -6,6 +6,7 @@
 #' @return Name of the player, representing the oldest player of the year.
 #' @export
 #' @examples
+#' @importFrom magrittr %>%
 #' oldest_player_of_year(1999)
 #' oldest_player_of_year(2015)
 
