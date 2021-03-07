@@ -6,16 +6,13 @@
 #' @return Names of the Top 10 players, who get the most PTS of the year.
 #' @export
 #' @examples
-#' @importFrom magrittr %>%
 #' PTS_top10_NBAplayers_of_year(1999)
 #' PTS_top10_NBAplayers_of_year(2015)
 
 #Top 10 players, whit the highest PTS, of Year
-
 PTS_top10_NBAplayers_of_year<- function(year){
-  nba1 <- nba %>%
-    dplyr::filter(Year == year) %>%
-    dplyr::arrange(desc(PTS))
-  Player_name = nba1$Player[1:10]
+  nba1 <- dplyr::filter(nba, Year == year)
+  nba2 <- dplyr::arrange(nba1, desc(PTS))
+  Player_name = nba2$Player[1:10]
   return(Player_name)
 }

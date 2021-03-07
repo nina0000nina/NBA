@@ -6,16 +6,13 @@
 #' @return Correlogram and a Correlation Matrix of all the numeric variables of the year
 #' @export
 #' @examples
-#' @importFrom magrittr %>%
 #' cor_matrix_of_year(1999)
 #' cor_matrix_of_year(2015)
 
-
 cor_matrix_of_year<- function(year){
-  nba1 <- nba %>%
-    purrr::keep(is.numeric) %>%
-    dplyr::filter(Year == year)
-  cor_max <- cor(nba1)
+  nba1 <- purrr::keep(nba, is.numeric)
+  nba2 <- dplyr::filter(nba1, Year == year)
+  cor_max <- cor(nba2)
   cor_plot <- corrplot::corrplot(cor_max, method="circle",type="upper")
   return(cor_plot)
 }
